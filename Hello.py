@@ -26,6 +26,13 @@ api_key = "GNXHU1EJE_DyekBLO_Lmu3K9Lzek8Cn6W4sfJbfqj7LQ"
 # Use the full page instead of a narrow central column
 st.set_page_config(layout="wide")
 
+# New sdr
+# sdr additional code
+jpeg_image_path = "watsonx.jpg"
+image_width = 250
+st.image(jpeg_image_path, width=image_width)
+# New sdr
+
 # Streamlit app title
 st.title("(BlackBelt) Dr. Watson I presume...")
 
