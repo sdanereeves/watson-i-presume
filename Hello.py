@@ -42,8 +42,9 @@ st.title("(BlackBelt) Dr. Watson I presume...")
 # Write bold text
 st.markdown('<font color="blue"><b><i>Enter your prompt!</i></b></font>', unsafe_allow_html=True)
 
-api_key = st.text_input("Enter You API Key...")
+#api_key = st.text_input("Enter You API Key...")
 #st.write("You entered:", api_key)
+api_key = st.text_input("Enter your sensitive information:", type="password")
 
 question = st.text_area('Question',height=100)
 button_clicked = st.button("Answer the question")
