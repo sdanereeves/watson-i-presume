@@ -44,7 +44,7 @@ st.markdown('<font color="blue"><b><i>Enter your prompt!</i></b></font>', unsafe
 
 #api_key = st.text_input("Enter You API Key...")
 #st.write("You entered:", api_key)
-api_key = st.text_input("Enter your sensitive information:", type="password")
+api_key = st.text_input("Enter your API Key:", type="password")
 
 question = st.text_area('Question',height=100)
 button_clicked = st.button("Answer the question")
