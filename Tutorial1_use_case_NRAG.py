@@ -13,7 +13,7 @@ url = "https://us-south.ml.cloud.ibm.com"
 watsonx_project_id = "68c1a11e-880e-45c1-b139-5f10aad02aa4"
 
 # Replace with your IBM Cloud key
-#api_key = "GNXHU1EJE_DyekBLO_Lmu3K9Lzek8Cn6W4sfJbfqj7LQ"
+api_key = "GNXHU1EJE_DyekBLO_Lmu3K9Lzek8Cn6W4sfJbfqj7LQ"
 
 print(url)
 print(watsonx_project_id)
