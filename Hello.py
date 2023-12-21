@@ -22,9 +22,9 @@ import os
 LOGGER = get_logger(__name__)
 
 # Replace with your watsonx project id (look up in the project Manage tab)
-watsonx_project_id = "68c1a11e-880e-45c1-b139-5f10aad02aa4"
+#watsonx_project_id = "68c1a11e-880e-45c1-b139-5f10aad02aa4"
 # Replace with your IBM Cloud key
-api_key = "NXHU1EJE_DyekBLO_Lmu3K9Lzek8Cn6W4sfJbfqj7LQ"
+#api_key = "NXHU1EJE_DyekBLO_Lmu3K9Lzek8Cn6W4sfJbfqj7LQ"
 
 # Use the full page instead of a narrow central column
 st.set_page_config(layout="wide")
