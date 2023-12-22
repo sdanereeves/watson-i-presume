@@ -1,5 +1,5 @@
 # Tutorial1_use_case_NRAG
-
+# Copyright (c) Secondary content - Steven D. Reeves IBM
 # WML python SDK
 from ibm_watson_machine_learning.foundation_models import Model
 from ibm_watson_machine_learning.metanames import GenTextParamsMetaNames as GenParams
@@ -8,16 +8,11 @@ from ibm_watson_machine_learning.foundation_models.utils.enums import ModelTypes
 # URL of the hosted LLMs is hardcoded because at this time all LLMs share the same endpoint
 url = "https://us-south.ml.cloud.ibm.com"
 
-# Replace with your watsonx project id (look up in the project Manage tab)
 
-watsonx_project_id = "68c1a11e-880e-45c1-b139-5f10aad02aa4"
-
-# Replace with your IBM Cloud key
-api_key = "GNXHU1EJE_DyekBLO_Lmu3K9Lzek8Cn6W4sfJbfqj7LQ"
-
-print(url)
-print(watsonx_project_id)
-print(api_key)
+#Variable tracing
+#print(url)
+#print(watsonx_project_id)
+#print(api_key)
 
 # The get_model function creates an LLM model object with the specified parameters
 def get_model(model_type,max_tokens,min_tokens,decoding,temperature):
@@ -46,8 +41,9 @@ def main():
     # Ask a question relevant to the info in the document
     # You can try asking different questions
     #question = "Who is Oracle?"
-    prompt = "Answer the question provided in '''.  Give specific use cases. Question: ''' "
-    question = "Answer the question provided in '''.  Give specific use cases. Question: ''' I have a client who is a wine company with about 100K customers having their data stored in one place. They are looking for a solution with a use case to look into historical data and get insights on trends and triggers that tell them the behavior of their customers, for example who are their loyal customers. How can they use predictive analytics ? '''"
+    #prompt = "Answer the question provided in '''.  Give specific use cases. Question: ''' "
+    #prompt = "Answer the question provided in '''.   Question: ''' "
+    #question = "Answer the question provided in '''.  Give specific use cases. Question: ''' I have a client who is a wine company with about 100K customers having their data stored in one place. They are looking for a solution with a use case to look into historical data and get insights on trends and triggers that tell them the behavior of their customers, for example who are their loyal customers. How can they use predictive analytics ? '''"
     print(question)
     answer_questions_from_doc(api_key, watsonx_project_id, question)
 
@@ -59,7 +55,7 @@ def answer_questions_from_doc(request_api_key, request_project_id, question):
 
     # Specify model parameters
     model_type = "meta-llama/llama-2-70b-chat"
-    max_tokens = 700
+    max_tokens = 800
     min_tokens = 200
     decoding = DecodingMethods.GREEDY
     temperature = 0.7
