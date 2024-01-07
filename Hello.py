@@ -25,7 +25,7 @@ import os
 LOGGER = get_logger(__name__)
 
 # Replace with your watsonx project id (look up in the project Manage tab)
-watsonx_project_id = ""
+#watsonx_project_id = "68c1a11e-880e-45c1-b139-5f10aad02aa4"
 # API Key is collected from user
 #api_key = ""
 
@@ -43,7 +43,9 @@ st.image(jpeg_image_path, width=image_width)
 st.title("(BlackBelt) Dr. Watson I presume...")
 
 # Write bold text
-st.markdown('<font color="blue"><b><i>Enter your prompt!</i></b></font>', unsafe_allow_html=True)
+
+#st.markdown('<font color="blue"><b><i>Enter your prompt!</i></b></font>', unsafe_allow_html=True)
+watsonx_project_id=st.text_input("Enter a Project Id:", type="password")
 
 #api_key = st.text_input("Enter You API Key...")
 #st.write("You entered:", api_key)
