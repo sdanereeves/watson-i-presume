@@ -25,7 +25,7 @@ import os
 LOGGER = get_logger(__name__)
 
 # Replace with your watsonx project id (look up in the project Manage tab)
-#watsonx_project_id = "68c1a11e-880e-45c1-b139-5f10aad02aa4"
+#watsonx_project_id = "8c1a11e-880e-45c1-b139-5f10aad02aa"
 # API Key is collected from user
 #api_key = ""
 
