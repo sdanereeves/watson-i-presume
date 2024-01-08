@@ -40,7 +40,7 @@ st.image(jpeg_image_path, width=image_width)
 # New sdr
 
 # Streamlit app title
-st.title("(BlackBelt) Dr. Watson I presume...")
+st.title("(BlackBelt) Dr. Watson...")
 
 # Write bold text
 
