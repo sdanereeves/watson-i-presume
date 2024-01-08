@@ -51,6 +51,8 @@ watsonx_project_id=st.text_input("Enter a Project Id:", type="password")
 #st.write("You entered:", api_key)
 api_key = st.text_input("Enter your API Key:", type="password")
 
+selected_option = st.selectbox("Select an option:", ["Option 1", "Option 2", "Option 3"])
+
 question = st.text_area('Question',height=100)
 button_clicked = st.button("Answer the question")
 st.subheader("Response")
