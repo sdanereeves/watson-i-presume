@@ -43,7 +43,6 @@ st.image(jpeg_image_path, width=image_width)
 st.title("(BlackBelt) Dr. Watson...")
 
 # Write bold text
-
 #st.markdown('<font color="blue"><b><i>Enter your prompt!</i></b></font>', unsafe_allow_html=True)
 watsonx_project_id=st.text_input("Enter a Project Id:", type="password")
 
