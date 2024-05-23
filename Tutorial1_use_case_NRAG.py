@@ -54,7 +54,8 @@ def answer_questions_from_doc(request_api_key, request_project_id, question):
     globals()["watsonx_project_id"] = request_project_id
 
     # Specify model parameters
-    model_type = "meta-llama/llama-2-70b-chat"
+    #model_type = "meta-llama/llama-2-70b-chat"
+    model_type = "meta-llama/llama-3-70b-instruct"
     max_tokens = 800
     min_tokens = 200
     decoding = DecodingMethods.GREEDY

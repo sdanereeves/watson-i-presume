@@ -44,7 +44,7 @@ st.title("(BlackBelt) Dr. Watson...")
 
 # Write bold text
 #st.markdown('<font color="blue"><b><i>Enter your prompt!</i></b></font>', unsafe_allow_html=True)
-watsonx_project_id=st.text_input("Enter a Project Id:", type="password")
+watsonx_project_id=st.text_input("Enter a Project ID:", type="password")
 
 #api_key = st.text_input("Enter You API Key...")
 #st.write("You entered:", api_key)
